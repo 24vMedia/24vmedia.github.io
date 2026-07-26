@@ -5,142 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>24vMedia</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:#0b0b0b;
-color:white;
-}
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
-}
-
-h1{
-font-size:70px;
-color:#3cff62;
-}
-
-h2{
-font-weight:300;
-margin:15px 0;
-}
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:15px 35px;
-background:#3cff62;
-color:black;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.08);
-}
-
-section{
-padding:80px 10%;
-}
-
-.card{
-background:#181818;
-padding:25px;
-border-radius:15px;
-margin-top:20px;
-}
-</style>
 </head>
 
 <body>
 
 <header>
-
-<div>
-
+<nav>
 <h1>24vMedia</h1>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
 
 <h2>Indiana Automotive Photography</h2>
 
-<p>Cars • Trucks • Bikes • Rollers • Events</p>
+<p>
+Cars • Trucks • Meets • Rollers
+</p>
 
-<br>
+<a href="#gallery" class="button">
+View Gallery
+</a>
 
-<a class="btn" href="#portfolio">Portfolio</a>
+</section>
 
-<a class="btn" href="#contact">Contact</a>
+<section id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/DSC_0116.jpeg" alt="">
+<img src="images/DSC_0856.jpeg" alt="">
+<img src="images/DSC_0857.jpeg" alt="">
+<img src="images/DSC_0881.jpeg" alt="">
+<img src="images/DSC_0910.jpeg" alt="">
 
 </div>
 
-</header>
+</section>
+<section id="about">
 
-<section id="portfolio">
+<h2>About 24vMedia</h2>
 
-<h1 style="font-size:45px;">Portfolio</h1>
-
-<div class="card">
-<h2>🚗 Cars</h2>
-</div>
-
-<div class="card">
-<h2>🛻 Trucks</h2>
-</div>
-
-<div class="card">
-<h2>🏍 Bikes</h2>
-</div>
-
-<div class="card">
-<h2>📸 Rollers</h2>
-</div>
-
-<div class="card">
-<h2>🎉 Events</h2>
-</div>
+<p>
+24vMedia is an Indiana-based automotive photography page focused on cars,
+trucks, rollers, meets, and cinematic content.
+</p>
 
 </section>
 
 <section id="contact">
 
-<h1 style="font-size:45px;">Contact</h1>
-
-<div class="card">
+<h2>Contact</h2>
 
 <p>Instagram: @24vMedia</p>
 
 <p>TikTok: @24vMedia</p>
 
-<p>Based in Indiana</p>
-
-</div>
+<p>Email: 24vmedia@gmail.com</p>
 
 </section>
 
+<script src="script.js"></script>
+
 </body>
 </html>
-
-24vMedia
-
-Automotive Photography
-Indiana
-
-Cars • Trucks • Bikes • Rollers
-
-[ View Portfolio ] [ Book a Shoot ]

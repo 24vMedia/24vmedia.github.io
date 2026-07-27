@@ -789,9 +789,9 @@ transition:.35s ease;
 }
 
 .navbar.scrolled{
-padding:12px 0;
-background:rgba(8,8,8,.92);
-box-shadow:0 10px 35px rgba(0,0,0,.35);
+padding:8px 0;
+background:rgba(0,0,0,.98);
+box-shadow:0 15px 45px rgba(0,0,0,.55);
 }
 
 .navbar .container{

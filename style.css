@@ -771,3 +771,97 @@ transform:translateY(0);
 .fade-up{
 animation:fadeUp .8s ease both;
 }
+/* ==========================================
+NAVBAR V2
+========================================== */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 0;
+background:rgba(10,10,10,.72);
+backdrop-filter:blur(16px);
+border-bottom:1px solid rgba(255,255,255,.08);
+z-index:9999;
+transition:.35s ease;
+}
+
+.navbar.scrolled{
+padding:12px 0;
+background:rgba(8,8,8,.92);
+box-shadow:0 10px 35px rgba(0,0,0,.35);
+}
+
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-family:'Bebas Neue',sans-serif;
+font-size:2rem;
+letter-spacing:2px;
+color:#b44cff;
+transition:.3s;
+}
+
+.logo:hover{
+text-shadow:0 0 18px rgba(180,76,255,.8);
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+list-style:none;
+align-items:center;
+}
+
+.nav-links a{
+position:relative;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#b44cff;
+}
+
+.nav-links a::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-6px;
+width:0%;
+height:2px;
+background:#b44cff;
+transition:.3s;
+}
+
+.nav-links a:hover::after{
+width:100%;
+}
+
+main{
+padding-top:90px;
+}
+
+// ==========================================
+// NAVBAR SCROLL EFFECT
+// ==========================================
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+if (!navbar) return;
+
+if (window.scrollY > 40) {
+navbar.classList.add("scrolled");
+} else {
+navbar.classList.remove("scrolled");
+}
+
+});

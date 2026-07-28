@@ -65,3 +65,42 @@ item.classList.toggle("active");
 });
 
 });
+
+// ==========================================
+// NAVBAR SCROLL EFFECT
+// ==========================================
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+if (!navbar) return;
+
+if (window.scrollY > 40) {
+navbar.classList.add("scrolled");
+} else {
+navbar.classList.remove("scrolled");
+}
+
+});
+// ==========================
+// MOBILE MENU
+// ==========================
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+if(menuToggle && navLinks){
+
+menuToggle.addEventListener("click",()=>{
+
+navLinks.classList.toggle("active");
+
+menuToggle.textContent =
+navLinks.classList.contains("active")
+? "✕"
+: "☰";
+
+});
+
+}

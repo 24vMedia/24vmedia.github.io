@@ -847,21 +847,68 @@ width:100%;
 main{
 padding-top:90px;
 }
+ /* ==========================================
+MOBILE NAVIGATION
+========================================== */
 
-// ==========================================
-// NAVBAR SCROLL EFFECT
-// ==========================================
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-if (!navbar) return;
-
-if (window.scrollY > 40) {
-navbar.classList.add("scrolled");
-} else {
-navbar.classList.remove("scrolled");
+.menu-toggle{
+display:none;
+font-size:2rem;
+color:#fff;
+cursor:pointer;
+transition:.3s;
+user-select:none;
 }
 
-});
+@media (max-width:900px){
+
+.menu-toggle{
+display:block;
+}
+
+.navbar .container{
+position:relative;
+}
+
+.nav-links{
+
+position:absolute;
+top:100%;
+left:0;
+
+width:100%;
+
+flex-direction:column;
+
+background:#090909;
+
+border-top:1px solid #222;
+
+padding:25px 0;
+
+display:none;
+
+gap:20px;
+
+animation:fadeDown .3s ease;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+}
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-15px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}

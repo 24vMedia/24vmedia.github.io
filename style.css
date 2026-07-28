@@ -798,6 +798,7 @@ box-shadow:0 15px 45px rgba(0,0,0,.55);
 display:flex;
 justify-content:space-between;
 align-items:center;
+width:100%;
 }
 
 .logo{
@@ -858,6 +859,9 @@ color:#fff;
 cursor:pointer;
 transition:.3s;
 user-select:none;
+padding:8px;
+margin-left:auto;
+line-height:1;
 }
 
 @media (max-width:900px){
@@ -875,21 +879,17 @@ position:relative;
 position:absolute;
 top:100%;
 left:0;
-
+right:0;
 width:100%;
-
 flex-direction:column;
-
-background:#090909;
-
-border-top:1px solid #222;
-
+align-items:center ;
+background:rgba(10, 10, 10, .98);
+backdrop-filter:blur(18px);
+border-top:1px solid rgba(255,255,255,.08);
+box-shadow:0 15px 35px rgba(0,0,0,.45);
 padding:25px 0;
-
 display:none;
-
 gap:20px;
-
 animation:fadeDown .3s ease;
 }
 

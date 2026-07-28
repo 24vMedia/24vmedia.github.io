@@ -104,3 +104,4 @@ navLinks.classList.contains("active")
 });
 
 }
+alert(scriptloaded)

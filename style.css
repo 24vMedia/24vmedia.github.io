@@ -618,8 +618,9 @@ position:relative;
 overflow:hidden;
 padding-top:140px;
 background:
-linear-gradient(rgba(9,9,9,.65), rgba(9,9,9,.85)),
-url("images/hero/placeholder.jpg") center/cover no-repeat;
+linear-gradient(rgba (9,9,9,.65), rgba(9,9,9,.85)),
+url("assets/images/logo/DSC_0289.jpg") 
+center/cover no-repeat;
 }
 
 .hero::before{

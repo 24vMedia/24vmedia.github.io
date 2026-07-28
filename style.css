@@ -616,6 +616,7 @@ HERO BACKGROUND
 .hero{
 position:relative;
 overflow:hidden;
+padding-top:140px;
 background:
 linear-gradient(rgba(9,9,9,.65), rgba(9,9,9,.85)),
 url("images/hero/placeholder.jpg") center/cover no-repeat;
@@ -756,7 +757,7 @@ left:0;
 width:100%;
 padding:12px 0;
 background:rgba(10,10,10,.72);
-backdrop-filter:blur(16px);
+backdrop-filter:blur(18px);
 border-bottom:1px solid rgba(255,255,255,.08);
 z-index:9999;
 transition:.35s ease;
@@ -786,8 +787,8 @@ align-items: center;
     transition:transform .3s ease;
 }
 
-.logo:hover{
-text-shadow:0 0 18px rgba(180,76,255,.8);
+.logo img:hover{
+transform:scale(1.05);
 }
 
 .nav-links{

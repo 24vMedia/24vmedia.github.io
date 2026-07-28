@@ -95,7 +95,7 @@ if(menuToggle && navLinks){
 menuToggle.addEventListener("click",()=>{
 
 navLinks.classList.toggle("active");
-
+console.log(navLinks.className)
 menuToggle.textContent =
 navLinks.classList.contains("active")
 ? "✕"

@@ -848,8 +848,12 @@ display:block;
 position:relative;
 }
 
+header{
+    position:relative;
+    z-index:9999;
+}
 .nav-links{
-
+z-index:9999;
 position:absolute;
 top:100%;
 left:0;
